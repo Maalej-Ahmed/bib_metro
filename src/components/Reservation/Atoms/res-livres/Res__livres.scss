@@ -1,0 +1,74 @@
+@import"../../../../Style/variables";
+@import"../../../../Style/couleurs";
+@import"../../../../Style/mixins";
+.resLivr{
+
+
+
+
+         width: 300px;
+         height: 100vh;
+         background-color: #5BAE9C;
+         display: block;
+ 
+             
+         .list{
+
+            width: 100%;
+            height:100%;
+  
+ 
+
+                   img{
+                    width: 100%;
+                    height: 100px;
+                   }
+
+                   .livracheter{
+                    width: 100%;
+                    height: 400px;
+                    display: flex;
+                    flex-direction: row;
+                    background: #467f72;
+                    position: relative;
+                    flex-wrap :wrap;
+                   
+                       .articleacherter{
+                        width: 70px;
+                        overflow: scroll;
+                        height: 90px;
+                        background: #ffffff;
+                        margin: 10px ;
+                    }
+                     
+                     
+                 
+
+
+              
+ 
+                   
+                   }
+                   button{
+                        padding: 20px 40px;
+                        position: relative;
+                        @include center;
+                        margin: 0 auto;
+                        margin-top: 20px;
+                        border-radius: 14px;
+                        background-color: #002222;
+                        border-color: #02BB77;
+                        font-size: medium;
+                        text-shadow: 400;
+                        color: #5BAE9C;
+                  
+                }
+         }
+
+        
+        
+
+
+
+
+}

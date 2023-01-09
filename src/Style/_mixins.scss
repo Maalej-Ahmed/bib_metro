@@ -1,0 +1,11 @@
+@mixin absolute_element($top,$left,$x,$y) {
+    position: absolute;
+    top:$top;
+    left: $left;
+    transform: translate($x,$y);  
+}
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

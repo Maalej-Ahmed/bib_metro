@@ -1,0 +1,87 @@
+@import"../../../../../Style/variables";
+@import"../../../../../Style/couleurs";
+@import"../../../../../Style/mixins";
+// @include absolute_element(50%,0,0,50%,-50%,-50%);
+
+.navs{
+    display: inline-flex;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-content: center;
+   
+}
+li{
+   
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+  
+    
+}
+ul{
+    display: inline-flex;
+    flex-direction: row;
+    height: 100%;
+    width: 70%;
+    list-style-type: none; 
+    @include center;
+   
+    margin: 0 auto;
+
+}
+a{
+    font-size: small;
+    height: 100%;
+    width: 50%;
+    text-decoration: none;
+    font-family:   'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    color: $premier_couleur;
+    @include center;
+ 
+}
+a:hover{
+    color:#C2FBD7 ;
+ 
+}
+
+@media all and (max-width:800px) {
+
+ 
+    .navs>ul>li>a{
+        font-size: 10px;
+    }    
+}
+@media all and (max-width:700px) {
+
+ 
+    .navs>ul>li>a{
+        font-size: 7px;
+    }    
+}
+
+
+@media all and (max-width:550) {
+
+ 
+    .navs>ul{}  
+    .navs>ul>li{}  
+    .navs>ul>li>a{
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+        font-family:   'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-weight: 600;
+        color: $premier_couleur;
+        @include center;
+        
+        
+    }    
+}
+

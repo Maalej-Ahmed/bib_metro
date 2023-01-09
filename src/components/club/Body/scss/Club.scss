@@ -1,0 +1,59 @@
+@import"../../../../Style/variables";
+@import"../../../../Style/couleurs";
+@import"../../../../Style/mixins";
+
+
+
+.CLUB{
+       background-color: #02BB77;
+       width: 100%;
+       height: 100vh;
+       display: inline-flex;
+       flex-direction: column;
+       position: relative;
+
+       img{
+        width: 200px;
+        margin: 0 auto ;
+        margin-top: 90px;
+
+       }
+       .tchat{
+        width: 1200px;
+        height: 600px;
+        margin: 0 auto ;
+        border: 6px solid #002222;
+        margin-top: 100px;
+        position: relative;
+        background-color: #C2FBD7;
+        display: flex;
+        flex-direction: column;
+            .msgs{
+                width: 100%;
+                 
+                margin: 0 AUTO ;
+
+                background-color: #C2FBD7;
+                height: 100%;
+
+            }
+            .text{
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                flex-direction: row;
+                background-color: #C2FBD7;
+
+                .textee{
+                    width: 100%;
+                    height: 20px;
+                    background-color: #3bb969;
+                    border: 0.2px solid #002222;
+                }
+                .envoyeer{
+                  background-color: #002222;
+                  color: #C2FBD7;
+                }
+            }
+       }
+}

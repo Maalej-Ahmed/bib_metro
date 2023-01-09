@@ -1,0 +1,147 @@
+@import"../../../../Style/variables";
+@import"../../../../Style/couleurs";
+@import"../../../../Style/mixins";
+
+
+
+.generale{
+   display: flex;
+   background-color: #02BB77 !important;
+   height: 100VH;
+flex-direction: column;
+
+   img{
+      width: 400px;
+      margin: 0 auto ;
+      margin-top: 30px;
+      padding-top:40px ;
+   }
+}
+
+
+
+.global {
+
+
+display: inline-flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-evenly;
+}
+
+
+/* btn */
+.button-33 {
+    background-color: #c2fbd7;
+    border-radius: 5px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 17px 80px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin :80px auto !important;
+    @include center;
+   
+  }
+  
+  .button-33:hover {
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+   
+
+
+   
+ 
+.form{
+   display: flex;
+   flex-direction: column;
+   @include center;
+   padding: 10px;
+}
+
+.form>h2{
+
+   color: #0c1810;
+   font-size: 30px;
+   text-align: center;
+   letter-spacing: 0.1em;
+   font-family: Roboto;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+
+}
+.inputBox{
+   position: relative;
+   width: 300px;
+   margin-top: 35px;
+}
+.inputBox>input{
+   position: relative;
+   width: 100%;
+   padding: 40px 10px 10px;
+   background: transparent;
+   border: none;
+   outline: none;
+   color: #002222;
+   display: flex;
+   align-content: flex-start;
+   font-size: 1em;
+   letter-spacing: 0.10em;
+   z-index: 11;
+
+}
+.inputBox>span{
+   position: absolute;
+   top: 0;
+   left: 0px;
+  
+   padding:40px 5px 0px;
+   font-size: 15px;
+   color: #c2fbd7;
+   pointer-events: none;
+   letter-spacing: 0.05em;
+   transition: 0.5s;
+
+}
+
+.inputBox>input:valid ~ span,
+.inputBox>input:focus ~ span
+{
+   padding:35px 10px 10px;
+   color: #c2fbd7;
+   
+   transform: translateX(-10px)translateY(-34px);
+   font-size: 0.55em;
+   
+    
+}
+.inputBox>i{
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 2px;
+   background: #c2fbd7;
+   border-radius:4px ;
+   transition: 0.5s;
+   pointer-events:none ;
+z-index: 10;
+}
+.inputBox>input:valid ~ i,
+.inputBox>input:focus ~ i
+
+{
+   height: 44px;
+}
